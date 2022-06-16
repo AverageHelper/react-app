@@ -1,25 +1,17 @@
-import logo from "./logo.svg";
+import { Logo } from "./components/Logo";
+import { OutLink } from "./components/OutLink";
 import "./App.css";
 
-function App() {
+export function App() {
 	return (
 		<div className="App">
 			<header className="App-header">
-				<img src={logo} className="App-logo" alt="logo" />
+				<Logo />
 				<p>
 					Edit <code>src/App.js</code> and save to reload.
 				</p>
-				<a
-					className="App-link"
-					href="https://reactjs.org"
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					Learn React
-				</a>
+				<OutLink href="https://reactjs.org">Learn React</OutLink>
 			</header>
 		</div>
 	);
 }
-
-export { App };
