@@ -3,7 +3,7 @@
 	"compilerOptions": {
 		"declaration": true,
 		"composite": true,
-		"types": ["node", "jest", "jest-extended"]
+		"types": ["jest", "jest-extended"]
 	},
 	"include": [
 		"./*.ts",
