@@ -1,0 +1,32 @@
+{
+	"compilerOptions": {
+		"target": "esnext",
+		"lib": ["esnext", "dom"],
+		"module": "esnext",
+		"moduleResolution": "node",
+		"jsx": "preserve",
+		"useDefineForClassFields": true,
+		"resolveJsonModule": true,
+		"allowJs": false,
+		"declaration": false,
+		"removeComments": true,
+		"sourceMap": true,
+		"baseUrl": "./src",
+		"outDir": "./dist",
+		"isolatedModules": true,
+		"strict": true,
+		"noFallthroughCasesInSwitch": true,
+		"noImplicitReturns": true,
+		"noPropertyAccessFromIndexSignature": true,
+		"noUncheckedIndexedAccess": true,
+		"useUnknownInCatchVariables": true,
+		"esModuleInterop": true,
+		"skipLibCheck": true,
+		"forceConsistentCasingInFileNames": true,
+		"types": [],
+		"typeRoots": ["./node_modules/@types", "./src"],
+		"paths": {
+			"@/*": ["src/*"]
+		}
+	}
+}

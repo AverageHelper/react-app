@@ -1,0 +1,9 @@
+{
+	"extends": "./tsconfig.base.json",
+	"compilerOptions": {
+		"declaration": true,
+		"composite": true
+	},
+	"include": ["**/*.ts", "**/*.tsx", "**/*.d.ts", "**/*.json"],
+	"exclude": ["**/*.test.ts", "**/*.test.tsx", "**/__mocks__/**/*.ts"]
+}

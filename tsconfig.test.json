@@ -1,0 +1,18 @@
+{
+	"extends": "./tsconfig.base.json",
+	"compilerOptions": {
+		"declaration": true,
+		"composite": true,
+		"types": ["node", "jest", "jest-extended"]
+	},
+	"include": [
+		"./*.ts",
+		"./*.tsx",
+		"./*.cjs",
+		"**/*.ts",
+		"**/*.tsx",
+		"**/*.d.ts",
+		"**/*.json",
+		"**/*.svg"
+	]
+}
