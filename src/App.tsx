@@ -12,7 +12,9 @@ export function App() {
 				<p>
 					Edit <code>{thisFile}</code> and save to reload.
 				</p>
-				<OutLink href="https://reactjs.org">Learn React</OutLink>
+				<OutLink className="App-link" href="https://reactjs.org">
+					Learn React
+				</OutLink>
 			</header>
 		</div>
 	);
