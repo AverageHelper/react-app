@@ -2,6 +2,7 @@ import type { ChangeEvent } from "react";
 
 interface Props {
 	label: string;
+	required?: boolean;
 	value: string;
 	onChange: (newValue: string) => void;
 }
@@ -22,7 +23,14 @@ export function TextInput(props: Props) {
 	return (
 		<label>
 			<span>{props.label}</span>
-			<input type="text" value={props.value} onChange={handleChange} />
+			<input
+				type="text"
+				name={props.label}
+				required={props.required ?? false}
+				aria-required={props.required ?? false}
+				value={props.value}
+				onChange={handleChange}
+			/>
 		</label>
 	);
 }

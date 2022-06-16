@@ -6,7 +6,7 @@ export function App() {
 	const thisFile = "src/App.tsx";
 
 	return (
-		<div className="App">
+		<main className="App">
 			<header className="App-header">
 				<Logo />
 				<p>
@@ -16,6 +16,6 @@ export function App() {
 					Learn React
 				</OutLink>
 			</header>
-		</div>
+		</main>
 	);
 }

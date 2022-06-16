@@ -20,11 +20,7 @@ export function Clock() {
 		return () => clearInterval(timer); // on kill, stop tick
 	}, []);
 
-	return (
-		<div>
-			<h1>It is {date.toLocaleTimeString()}.</h1>
-		</div>
-	);
+	return <h1>It is {date.toLocaleTimeString()}.</h1>;
 }
 
 // ** Using the class syntax, in case you need a refresher on how the above used to look:
@@ -69,11 +65,7 @@ export class Clock extends Component<object, ClockState> {
 	}
 
 	render() {
-		return (
-			<div>
-				<h1>It is {this.state.date.toLocaleTimeString()}.</h1>
-			</div>
-		);
+		return <h1>It is {this.state.date.toLocaleTimeString()}.</h1>;
 	}
 }
 
