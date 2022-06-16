@@ -9,7 +9,8 @@
 		"test:watch": "react-scripts test --watch --verbose",
 		"eject": "react-scripts eject",
 		"lint": "./node_modules/.bin/eslint . --ext .js,.ts,.jsx,.tsx",
-		"lint:fix": "npm run lint -- --fix"
+		"lint:fix": "npm run lint -- --fix",
+		"audit": "npm audit --production"
 	},
 	"dependencies": {
 		"react": "^18.2.0",
