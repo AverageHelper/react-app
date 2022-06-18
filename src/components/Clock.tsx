@@ -1,3 +1,4 @@
+import { Component, useEffect, useState } from "react";
 import { useCurrentDate } from "../hooks/useCurrentDate";
 
 /**
@@ -12,10 +13,9 @@ export function Clock() {
 	return <h1>It is {date.toLocaleTimeString()}.</h1>;
 }
 
-// ** Using our own hooks
-
-/*
-import { useEffect, useState } from "react";
+// **
+// ** Using hooks
+// **
 
 /**
  * An example of a stateful functional component.
@@ -23,8 +23,8 @@ import { useEffect, useState } from "react";
  * @example
  * import { Clock } from "./Clock";
  * <Clock />
- * /
-export function Clock() {
+ */
+export function ClockWithHooks() {
 	const [date, setDate] = useState(new Date()); // now
 
 	function tick() {
@@ -39,12 +39,10 @@ export function Clock() {
 
 	return <h1>It is {date.toLocaleTimeString()}.</h1>;
 }
-*/
 
+// **
 // ** Using the class syntax, in case you need a refresher on how the above used to look:
-
-/*
-import { Component } from "react";
+// **
 
 interface ClockState {
 	date: Date;
@@ -56,8 +54,8 @@ interface ClockState {
  * @example
  * import { Clock } from "./Clock";
  * <Clock />
- * /
-export class Clock extends Component<object, ClockState> {
+ */
+export class ClockAsClass extends Component<object, ClockState> {
 	timer: number | null;
 
 	constructor() {
@@ -86,5 +84,3 @@ export class Clock extends Component<object, ClockState> {
 		return <h1>It is {this.state.date.toLocaleTimeString()}.</h1>;
 	}
 }
-
-*/
