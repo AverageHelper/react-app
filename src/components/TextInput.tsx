@@ -4,7 +4,7 @@ interface Props {
 	label: string;
 	required?: boolean;
 	value: string;
-	onChange: (newValue: string) => void;
+	onChange?: (newValue: string) => void;
 }
 
 /**
@@ -12,10 +12,11 @@ interface Props {
  *
  * @example
  * import { TextInput } from "./TextInput";
- * <TextInput label="Some Text" value={this.state.value} onChange={handleChange}  />
+ * <TextInput label="Some Text" value={this.state.value} onChange={handleChange} />
  */
 export function TextInput(props: Props) {
 	function handleChange(event: ChangeEvent<HTMLInputElement>) {
+		if (!props.onChange) return;
 		const value = event.target.value;
 		props.onChange(value);
 	}
