@@ -68,3 +68,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## Contributing
+
+This project lives primarily at [git.average.name](https://git.average.name/AverageHelper/react-app). Read-only mirrors also exist on [Codeberg](https://codeberg.org/AverageHelper/react-app) and [GitHub](https://github.com/AverageHelper/react-app). Issues or pull requests should be filed at [git.average.name](https://git.average.name/AverageHelper/react-app). You may sign in or create an account directly, or use one of several OAuth 2.0 providers.
